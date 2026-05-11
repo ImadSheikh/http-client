@@ -1,0 +1,29 @@
+# 🌐 HTTP Client (C - Socket Programming)
+
+A lightweight **HTTP/1.1 client implemented in C** using low-level socket programming.  
+This project demonstrates how HTTP works internally by manually building requests, sending them over TCP, and handling server responses.
+
+---
+
+# 🚀 Features
+
+- ✔ HTTP/1.1 GET requests
+- ✔ IPv4 socket communication
+- ✔ URL parsing (`http://host[:port]/path`)
+- ✔ Query parameter support (`-r n key=value`)
+- ✔ Automatic redirect handling (HTTP 3xx with Location header)
+- ✔ Response size tracking
+- ✔ Full raw HTTP response output
+- ✔ Proper error handling (system calls + usage errors)
+
+---
+
+
+---
+
+# ⚙️ Compilation
+
+Compile using GCC:
+
+```bash
+gcc -Wall -Wextra -o client client.c
